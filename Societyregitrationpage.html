@@ -3,6 +3,19 @@
 <head>
     <title>Society Regitration Page</title>
 </head>
+<script type="text/javascript">
+    function display_function(){
+        alert("members_name: "+ document.getElementById("members_name").value)
+        alert("flat_no "+ document.getElementById("flat_no").value)
+        alert(" floor: "+ document.getElementById("floor").value)
+        alert("mobile no: "+ document.getElementById("mobile").value)
+        alert("email ID: "+ document.getElementById("email").value)
+        alert("no_of_members: "+ document.getElementById("no_of_members").value)
+        var e=document.getElementById("bloodgroup")
+        alert("bloodgroup: "+ e.options[e.selectedIndex].value) 
+        alert("nomination: "+ document.querySelector('input[name="nomination"]:checked').value)
+    }
+</script>
 <body bgcolor="gray">
     <h1>Society Members Details</h1>
     <h2> <marquee>Nirmal Sagar CHS. PVT.LTD. </marquee></h2>
@@ -14,15 +27,15 @@
             <table border="0" cellpadding="5">
                 <tr>
                     <td><label for="members_name">members name </label></td>
-                    <td><input id="members_name" type="text" name="members_name"><br></td>
+                    <td><input id="members_name" required="true" type="text" name="members_name"><br></td>
                 </tr>
                 <tr>
                     <td><label for="flat_no">flat no:</label></td>
-                    <td><input id="flat_no" required="tru" minlength="5" maxlength="10" type="text" name="flat_no"><br></td>
+                    <td><input id="flat_no" required="true" minlength="1" maxlength="10" type="text" name="flat_no"><br></td>
                 </tr>
                 <tr>
                     <td><label for="floor">floor:</label></td>
-                    <td><input id="floor" required="floor"type="text" name="floor"><br></td>
+                    <td><input id="floor" required="true" type="text" name="floor"><br></td>
                 </tr>
                 <tr>
                     <td><label for="mobile">mobile no.</label></td>
@@ -34,13 +47,13 @@
                     <td><input id="email" required="true" type="email" name="email"><br></td>
                 </tr>
                 <tr>
-                    <td><label for="no of members">no of members in house.</label></td>
-                    <td><input id="no of members" required="true" minlength="10" maxlength="10" type="text" name="mobile"><br></td>
+                    <td><label for="no_of_members">no of members in house.</label></td>
+                    <td><input id="no_of_members" required="true" minlength="1" maxlength="1" type="text" name="no_of_members"><br></td>
 
                 </tr>
                 <tr>
                    <td><lable>blood group</lable>
-                    <select bloodgroup="bloodgroup">blood group
+                    <select id="bloodgroup">blood group
                         <option value="A+">A+</option>  
                         <option value="O+">O+</option>
                         <option value="A">A</option>
@@ -52,17 +65,18 @@
             <tr>
                 <td><label>nomination:</label></label></td>
                 <td>
-                    <input type="radio" required="true" name="nomination" value="1">yes
-                    <input type="radio" required="true" name="nomination" value="2">no<br>
+                    <input type="radio" required="true" name="nomination" value="yes">yes
+                    <input type="radio" required="true" name="nomination" value="no">no<br>
                 </td>
             </tr>
             <tr>
-                <td colspan="2" align="center"><input type="Submit" name="submit" >
+                <td colspan="2" align="center"><input type="button" name="submit" onclick="display_function()" value="submit">
                 </td>
 
             </tr>
         </table>
     </form>
+
 </body>
 
 </html>
