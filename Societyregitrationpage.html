@@ -5,63 +5,64 @@
 </head>
 <body bgcolor="gray">
     <h1>Society Members Details</h1>
-    <h2> <marquee>Nirmal Sagar CHS. PVT.LTD. </marquee></h2>   
+    <h2> <marquee>Nirmal Sagar CHS. PVT.LTD. </marquee></h2>
     <img src="images/societylogo.jpg" align="right">
     <map name="test"><hr>
         <a href="images/society_events.jpg">Society Events</a>
         <a href="images/abc.txt"> AGM details </a>
-        <table border="0" cellpadding="5">
-            <tr>
-                <td><label for="members_name">members name </label></td>
-                <td><input id="members_name" type="text" name="members_name"><br></td>
+        <form>
+            <table border="0" cellpadding="5">
+                <tr>
+                    <td><label for="members_name">members name </label></td>
+                    <td><input id="members_name" type="text" name="members_name"><br></td>
+                </tr>
+                <tr>
+                    <td><label for="flat_no">flat no:</label></td>
+                    <td><input id="flat_no" required="tru" minlength="5" maxlength="10" type="text" name="flat_no"><br></td>
+                </tr>
+                <tr>
+                    <td><label for="floor">floor:</label></td>
+                    <td><input id="floor" required="floor"type="text" name="floor"><br></td>
+                </tr>
+                <tr>
+                    <td><label for="mobile">mobile no.</label></td>
+                    <td><input id="mobile" required="true" minlength="10" maxlength="10" type="text" name="mobile"><br></td>
+
+                </tr>
+                <tr>
+                    <td><label for="email">email id:</label></td>
+                    <td><input id="email" required="true" type="email" name="email"><br></td>
+                </tr>
+                <tr>
+                    <td><label for="no of members">no of members in house.</label></td>
+                    <td><input id="no of members" required="true" minlength="10" maxlength="10" type="text" name="mobile"><br></td>
+
+                </tr>
+                <tr>
+                   <td><lable>blood group</lable>
+                    <select bloodgroup="bloodgroup">blood group
+                        <option value="A+">A+</option>  
+                        <option value="O+">O+</option>
+                        <option value="A">A</option>
+                        <option value="AB">AB</option>
+                        <option value="O">O</option>    
+                    </select>
+                </td>
             </tr>
             <tr>
-                <td><label for="flat_no">flat no:</label></td>
-                <td><input id="flat_no" required="tru" minlength="5" maxlength="10" type="text" name="flat_no"><br></td>
+                <td><label>nomination:</label></label></td>
+                <td>
+                    <input type="radio" required="true" name="nomination" value="1">yes
+                    <input type="radio" required="true" name="nomination" value="2">no<br>
+                </td>
             </tr>
             <tr>
-                <td><label for="floor">floor:</label></td>
-                <td><input id="floor" required="floor"type="text" name="floor"><br></td>
-            </tr>
-            <tr>
-                <td><label for="mobile">mobile no.</label></td>
-                <td><input id="mobile" required="true" minlength="10" maxlength="10" type="text" name="mobile"><br></td>
+                <td colspan="2" align="center"><input type="Submit" name="submit" >
+                </td>
 
             </tr>
-            <tr>
-                <td><label for="email">email id:</label></td>
-                <td><input id="email" required="true" type="email" name="email"><br></td>
-            </tr>
-            <tr>
-                <td><label for="no of members">no of members in house.</label></td>
-                <td><input id="no of members" required="true" minlength="10" maxlength="10" type="text" name="mobile"><br></td>
-
-            </tr>
-            <tr>
-             <td><lable>blood group</lable>
-                <select bloodgroup="bloodgroup">blood group
-                    <option value="A+">A+</option>  
-                    <option value="O+">O+</option>
-                    <option value="A">A</option>
-                    <option value="AB">AB</option>
-                    <option value="O">O</option>    
-                </select>
-            </td>
-        </tr>
-        <tr>
-            <td><label>nomination:</label></label></td>
-            <td>
-                <input type="radio" required="true" name="nomination" value="1">yes
-                <input type="radio" required="true" name="nomination" value="2">no<br>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2" align="center"><input type="Submit" name="submit" >
-            </td>
-
-        </tr>
-    </table>
-</form>
+        </table>
+    </form>
 </body>
 
 </html>
