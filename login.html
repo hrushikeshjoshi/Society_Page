@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+	<script>
+		$(document).ready(function(){
+			$("#login").click(function(){
+				// alert("click")
+				auth()
+			})
+
+			var auth=function(){
+				var user_name=$("#user_name").val()
+				var password=$("#password").val()
+				if (user_name=="hrushikesh" && password=="admin") {
+					// alert("ok")
+					window.location.href="Societyregitrationpage.html"
+				} else {
+					alert("error")
+				}	
+				// alert(user_name)
+
+			}
+
+		});
+	</script>
+</head>
+<body>
+	<input type="text" id="user_name" name="user_name">
+	<input type="password" id="password" name="password">
+	<BUTTON id="login">LOGIN</BUTTON>
+</body>
+</html>
