@@ -4,10 +4,10 @@
     <title>Society Regitration Page</title>
     <script type="text/javascript">
     var username = prompt("Enter your name: ", "");
-    if (confirm("welcome " + username)) {
-       document.write("<p>Hello, " + username + "!</p>");
+    if (username) {
+       alert("Hello, " + username + "!");
     } else {
-       document.write("<p>Hello, world!</p>");
+       alert("Hello, world!");
     }
   </script>
     <script type="text/javascript">
@@ -19,7 +19,7 @@
             alert("email ID: "+ document.getElementById("email").value)
             alert("no_of_members: "+ document.getElementById("no_of_members").value)
             var e=document.getElementById("bloodgroup")
-            alert("bloodgroup: "+ e.options[e.selectedIndex].value) 
+            alert("bloodgroup: "+ e.options[e.selectedIndex].value)
             alert("nomination: "+ document.querySelector('input[name="nomination"]:checked').value)
         }
     </script>
@@ -65,11 +65,11 @@
                         <tr>
                          <td><lable>blood group</lable>
                             <select id="bloodgroup">blood group
-                                <option value="A+">A+</option>  
+                                <option value="A+">A+</option>
                                 <option value="O+">O+</option>
                                 <option value="A">A</option>
                                 <option value="AB">AB</option>
-                                <option value="O">O</option>    
+                                <option value="O">O</option>
                             </select>
                         </td>
                     </tr>
