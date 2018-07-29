@@ -2,94 +2,95 @@
 <html>
 <head>
     <title>Society Regitration Page</title>
-    <SCRIPT LANGUAGE="JavaScript">
-
-function MsgBox () {
-alert ("Welcome to our society Page!") }
-
-</SCRIPT>
-</head>
-<script type="text/javascript">
-    function display_function(){
-        alert("members_name: "+ document.getElementById("members_name").value)
-        alert("flat_no "+ document.getElementById("flat_no").value)
-        alert(" floor: "+ document.getElementById("floor").value)
-        alert("mobile no: "+ document.getElementById("mobile").value)
-        alert("email ID: "+ document.getElementById("email").value)
-        alert("no_of_members: "+ document.getElementById("no_of_members").value)
-        var e=document.getElementById("bloodgroup")
-        alert("bloodgroup: "+ e.options[e.selectedIndex].value) 
-        alert("nomination: "+ document.querySelector('input[name="nomination"]:checked').value)
+    <script type="text/javascript">
+    var username = prompt("Enter your name: ", "");
+    if (confirm("Your name is " + username)) {
+       document.write("<p>Welcome + username + "!</p>");
+    } else {
+       document.write("<p>Hello, world!</p>");
     }
-</script>
-<body bgcolor="gray">
-    <h1>Society Members Details</h1>
-    <SCRIPT LANGUAGE="JavaScript">
-var x= new Date();
-document.write (x);
-</SCRIPT>
-    <h2> <marquee>Nirmal Sagar CHS. PVT.LTD. </marquee></h2>
+  </script>
+    <script type="text/javascript">
+        function display_function(){
+            alert("members_name: "+ document.getElementById("members_name").value)
+            alert("flat_no "+ document.getElementById("flat_no").value)
+            alert(" floor: "+ document.getElementById("floor").value)
+            alert("mobile no: "+ document.getElementById("mobile").value)
+            alert("email ID: "+ document.getElementById("email").value)
+            alert("no_of_members: "+ document.getElementById("no_of_members").value)
+            var e=document.getElementById("bloodgroup")
+            alert("bloodgroup: "+ e.options[e.selectedIndex].value) 
+            alert("nomination: "+ document.querySelector('input[name="nomination"]:checked').value)
+        }
+    </script>
+    <body bgcolor="gray">
+        <h1>Society Members Details</h1>
+        <SCRIPT LANGUAGE="JavaScript">
+            var x= new Date();
+            document.write (x);
+        </SCRIPT>
+        <h2> <marquee>Nirmal Sagar CHS. PVT.LTD. </marquee></h2>
         <img src="images/societylogo.jpg" align="right">
-    <BODY onload="MsgBox()">
-<frameset onload="MsgBox()">
-</frameset>
-    <map name="test"><hr>
-        <a href="images/society_events.jpg">Society Events</a>
-        <a href="images/abc.txt"> AGM details </a>
+        <BODY onload="MsgBox()">
+            <frameset onload="MsgBox()">
+            </frameset>
+            <map name="test"><hr>
+                <a href="images/society_events.jpg">Society Events</a>
+                <a href="images/abc.txt"> AGM details </a>
                 <form>
-            <table border="0" cellpadding="5">
-                <tr>
-                    <td><label for="members_name">members name </label></td>
-                    <td><input id="members_name" required="true" type="text" name="members_name"><br></td>
-                </tr>
-                <tr>
-                    <td><label for="flat_no">flat no:</label></td>
-                    <td><input id="flat_no" required="true" minlength="1" maxlength="10" type="text" name="flat_no"><br></td>
-                </tr>
-                <tr>
-                    <td><label for="floor">floor:</label></td>
-                    <td><input id="floor" required="true" type="text" name="floor"><br></td>
-                </tr>
-                <tr>
-                    <td><label for="mobile">mobile no.</label></td>
-                    <td><input id="mobile" required="true" minlength="10" maxlength="10" type="text" name="mobile"><br></td>
+                    <table border="0" cellpadding="5">
+                        <tr>
+                            <td><label for="members_name">members name </label></td>
+                            <td><input id="members_name" required="true" type="text" name="members_name"><br></td>
+                        </tr>
+                        <tr>
+                            <td><label for="flat_no">flat no:</label></td>
+                            <td><input id="flat_no" required="true" minlength="1" maxlength="10" type="text" name="flat_no"><br></td>
+                        </tr>
+                        <tr>
+                            <td><label for="floor">floor:</label></td>
+                            <td><input id="floor" required="true" type="text" name="floor"><br></td>
+                        </tr>
+                        <tr>
+                            <td><label for="mobile">mobile no.</label></td>
+                            <td><input id="mobile" required="true" minlength="10" maxlength="10" type="text" name="mobile"><br></td>
 
-                </tr>
-                <tr>
-                    <td><label for="email">email id:</label></td>
-                    <td><input id="email" required="true" type="email" name="email"><br></td>
-                </tr>
-                <tr>
-                    <td><label for="no_of_members">no of members in house.</label></td>
-                    <td><input id="no_of_members" required="true" minlength="1" maxlength="1" type="text" name="no_of_members"><br></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">email id:</label></td>
+                            <td><input id="email" required="true" type="email" name="email"><br></td>
+                        </tr>
+                        <tr>
+                            <td><label for="no_of_members">no of members in house.</label></td>
+                            <td><input id="no_of_members" required="true" minlength="1" maxlength="1" type="text" name="no_of_members"><br></td>
 
-                </tr>
-                <tr>
-                   <td><lable>blood group</lable>
-                    <select id="bloodgroup">blood group
-                        <option value="A+">A+</option>  
-                        <option value="O+">O+</option>
-                        <option value="A">A</option>
-                        <option value="AB">AB</option>
-                        <option value="O">O</option>    
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td><label>nomination:</label></label></td>
-                <td>
-                    <input type="radio" required="true" name="nomination" value="yes">yes
-                    <input type="radio" required="true" name="nomination" value="no">no<br>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2" align="center"><input type="button" name="submit" onclick="display_function()" value="submit">
-                </td>
+                        </tr>
+                        <tr>
+                         <td><lable>blood group</lable>
+                            <select id="bloodgroup">blood group
+                                <option value="A+">A+</option>  
+                                <option value="O+">O+</option>
+                                <option value="A">A</option>
+                                <option value="AB">AB</option>
+                                <option value="O">O</option>    
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>nomination:</label></label></td>
+                        <td>
+                            <input type="radio" required="true" name="nomination" value="yes">yes
+                            <input type="radio" required="true" name="nomination" value="no">no<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center"><input type="button" name="submit" onclick="display_function()" value="submit">
+                        </td>
 
-            </tr>
-        </table>
-    </form>
+                    </tr>
+                </table>
+            </form>
 
-</body>
+        </body>
 
-</html>
+        </html>
