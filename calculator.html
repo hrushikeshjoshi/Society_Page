@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculator</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+	<script>
+		$(document).ready(function(){
+
+			$("#calculate").click(function(){
+			 // alert("click")
+			 calculate()
+			})
+
+			var calculate=function(){
+				var first_no=$("#first_no").val()
+				// alert(first_no)
+				var op=$("#op").val()
+				// alert(op)
+				var second_no=$("#second_no").val()
+				// alert(second_no)
+				$("#ans").val(eval(first_no+op+second_no))
+
+			}
+		});
+	</script>
+</head>
+<body>
+	<input type="text" name="1st_no" id="first_no">
+	<input type="text" name="op" id="op">
+	<input type="text" name="2nd_no" id="second_no">
+	<label>=</label>
+	<input type="text" name="ans" readonly="true" id="ans">
+	<input type="button" name="calculate" value="calculate" id="calculate">
+</body>
+</html>
