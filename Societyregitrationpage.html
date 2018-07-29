@@ -4,8 +4,8 @@
     <title>Society Regitration Page</title>
     <script type="text/javascript">
     var username = prompt("Enter your name: ", "");
-    if (confirm("Your name is " + username)) {
-       document.write("<p>Welcome + username + "!</p>");
+    if (confirm("welcome " + username)) {
+       document.write("<p>Hello, " + username + "!</p>");
     } else {
        document.write("<p>Hello, world!</p>");
     }
@@ -23,7 +23,7 @@
             alert("nomination: "+ document.querySelector('input[name="nomination"]:checked').value)
         }
     </script>
-    <body bgcolor="gray">
+    <body bgcolor="gray" onload="MsgBox()">>
         <h1>Society Members Details</h1>
         <SCRIPT LANGUAGE="JavaScript">
             var x= new Date();
@@ -31,9 +31,6 @@
         </SCRIPT>
         <h2> <marquee>Nirmal Sagar CHS. PVT.LTD. </marquee></h2>
         <img src="images/societylogo.jpg" align="right">
-        <BODY onload="MsgBox()">
-            <frameset onload="MsgBox()">
-            </frameset>
             <map name="test"><hr>
                 <a href="images/society_events.jpg">Society Events</a>
                 <a href="images/abc.txt"> AGM details </a>
