@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+</head>
+<body>
+	<table border="1" cellpadding="15">
+        <tr>
+            <td>Assam tea</td>
+            <td><img src="images/Assam-Tea.png"></td>
+            <td>Price:290</td>
+            <td>
+                <input type="checkbox" class="price" data-price=290>
+            </td>
+        </tr>
+        <tr>
+            <td>Aztec single origin Coffee</td>
+            <td><img src="images/Aztec-Ethiopian-Coffee.png"></td>
+        <td>Price:310</td>
+
+            <td>
+                <input type="checkbox" class="price" data-price=310>
+            </td>
+        </tr>
+        <tr>
+            <td>Café Americano</td>
+            <td><img src="images/Cafe-Americano.png"></td>
+            <td>Price:260</td>
+
+            <td>
+                <input type="checkbox" class="price" data-price=260>
+            </td>
+        </tr>
+        <tr>
+            <td>Café Latte</td>
+            <td><img src="images/Cafe-Latte.png"></td>
+            <td>Price:259</td>
+
+            <td>
+                <input type="checkbox" class="price" data-price=259>
+            </td>
+        </tr>
+    </table>
+    <label>Your Total Bill: <span id="total_amount"></span> </label>
+    <script type="text/javascript">
+        var total_price=0
+        $(document).ready(function(){
+            $(".price").click(function(){
+                if ($(this).is(":checked")) {
+                    console.log($(this).attr("data-price"))
+                    total_price+=parseInt($(this).attr("data-price"))
+                    $("#total_amount").html(total_price)
+                }
+                else{
+
+                    console.log($(this).attr("data-price"))
+                    total_price-=parseInt($(this).attr("data-price"))
+                    $("#total_amount").html(total_price)
+                }
+            })
+        })
+
+    </script>
+
+
+    </body>
+    </html>

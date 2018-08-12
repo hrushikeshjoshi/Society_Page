@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us </title>
+
+
+<script type="text/javascript">
+    function display_function(){
+        alert("Name: "+ document.getElementById("Name").value)
+        alert("mobile no: "+ document.getElementById("mobile").value)
+        alert("email ID: "+ document.getElementById("email").value)
+         var e=document.getElementById("state")
+        alert("state: "+ e.options[e.selectedIndex].value)
+            }
+</script>
+
+</head>
+<body>
+	<h2>Contact Us</h2><hr>
+	<table border="0" cellpadding="5">
+                <tr>
+                    <td><label for="Name">Name </label></td>
+                    <td><input id="Name" required="true" type="text" name="Name"><br></td>
+                </tr>
+                <tr>
+                    <td><label for="mobile">mobile no.</label></td>
+                    <td><input id="mobile" required="true" minlength="10" maxlength="10" type="text" name="mobile"><br></td>
+
+                </tr>
+                <tr>
+                    <td><label for="email">email id:</label></td>
+                    <td><input id="email" required="true" type="email" name="email"><br></td>
+                </tr>
+                 <td><lable>state:</lable>
+                    <select id="state">state
+                        <option value="maharashtra">maharashtra</option>
+                        <option value="dehli">dehli</option>
+                        <option value="up">up</option>
+                        <option value="chennai">chennai</option>
+                        <option value="pune">pune</option>
+                    </select>
+                                <tr>
+                <td colspan="2" align="center"><input type="button" name="submit" onclick="display_function()" value="submit">
+                </td>
+
+            </tr>
+
+
+</body>
+</html>

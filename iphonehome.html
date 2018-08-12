@@ -2,66 +2,72 @@
 <html>
 <head>
 	<title>iphone seller</title>
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-    </script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
 </head>
 <body>
-	<h1>iphone Seller </h1><hr>
-	<table border="1" cellpadding="15">
-        <tr>
-            <td>IphoneX</td>
-            <td><img src="images/iphoneX.jpg"></td>
-            <td>Price:89000</td>
-            <td>
-                <input type="checkbox" class="price" price-data=89000>
-            </td>
-        </tr>
-        <tr>
-            <td>Iphone7</td>
-            <td><img src="images/iphone7.png"></td>
-        <td>Price:67000</td>
+	<div style="background-color:black;color:white;padding:20px;"> 
+		<h1>iphone Seller </h1><hr>
+			<marquee><img src="images/apple_logo.jpg" style="width:150px">
+			<img src="images/apple_logo_1.jpg" style="width:150px">
+			<img src="images/apple_logo_2.png" style="width:100px"></marquee>
+			<hr>
+			<table border="1" cellpadding="15">
+				<tr>
+					<td>IphoneX</td>
+					<td><img src="images/iphoneX.jpg"></td>
+					<td>Price:89000</td>
+					<td>
+						<input type="checkbox" class="price" price-data=89000>
+					</td>
+				</tr>
+				<tr>
+					<td>Iphone7</td>
+					<td><img src="images/iphone7.png"></td>
+					<td>Price:67000</td>
 
-            <td>
-                <input type="checkbox" class="price" price-data=67000>
-            </td>
-        </tr>
-        <tr>
-            <td>Iphone6</td>
-            <td><img src="images/iphone6.jpg"></td>
-            <td>Price:48000</td>
-         <td>
-                <input type="checkbox" class="price" price-data=48000>
-            </td>
-        </tr>
-        <tr>
-            <td>IphoneSE</td>
-            <td><img src="images/iphoneSE.png"></td>
-            <td>Price:37000</td>
-            <td>
-                <input type="checkbox" class="price" price-data=37000>
-            </td>
-        </tr>
-    </table>
-    <label>Your Total Bill: <span id="total_amount"></span> </label>
-    <script type="text/javascript">
-        var total_price=0
-        $(document).ready(function(){
-            $(".price").click(function(){
-                if ($(this).is(":checked")) {
-                    console.log($(this).attr("price-data"))
-                    total_price+=parseInt($(this).attr("price-data"))
-                    $("#total_amount").html(total_price)
-                }
-                else{
+					<td>
+						<input type="checkbox" class="price" price-data=67000>
+					</td>
+				</tr>
+				<tr>
+					<td>Iphone6</td>
+					<td><img src="images/iphone6.jpg"></td>
+					<td>Price:48000</td>
+					<td>
+						<input type="checkbox" class="price" price-data=48000>
+					</td>
+				</tr>
+				<tr>
+					<td>IphoneSE</td>
+					<td><img src="images/iphoneSE.png"></td>
+					<td>Price:37000</td>
+					<td>
+						<input type="checkbox" class="price" price-data=37000>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<label>Your Total Bill: <span id="total_amount"></span> </label>
+		<script type="text/javascript">
+			var total_price=0
+			$(document).ready(function(){
+				$(".price").click(function(){
+					if ($(this).is(":checked")) {
+						console.log($(this).attr("price-data"))
+						total_price+=parseInt($(this).attr("price-data"))
+						$("#total_amount").html(total_price)
+					}
+					else{
 
-                    console.log($(this).attr("price-data"))
-                    total_price-=parseInt($(this).attr("price-data"))
-                    $("#total_amount").html(total_price)
-                }
-            })
-        })
+						console.log($(this).attr("price-data"))
+						total_price-=parseInt($(this).attr("price-data"))
+						$("#total_amount").html(total_price)
+					}
+				})
+			})
 
-    </script>
+		</script>
 
-</body>
-</html>
+	</body>
+	</html>

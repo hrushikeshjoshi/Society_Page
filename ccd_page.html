@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CCD_</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+</head>
+<body>
+    <h1>cafe coffee day</h1><hr>
+    <img src="images/ccd_logo.jpg" align="right">
+    <a href="images/menu_card.jpg">Menu card</a></br></br>
+    <a href="images/new_arrivals.jpg">Whats New </a></br></br>
+    <a href="hot_bevrages.html">Hot Bevrages</a></br></br>
+    <a href="contact_us.html">Contact us</a></br></br>
+    <a href="about_us.txt">About Us </a></br></br>
+    <button id="show_hide">show</button>
+    <div class="table_menu">
+
+        <table border="1" cellpadding="15">
+            <tr>
+                <td>Menu Card</td>
+                <td><img src="images/menu_card.jpg" align="right"></td> 
+            </tr>
+            <tr>
+                <td>new offers</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>phone No.</td>
+                <td>1234567891</td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <i>&copy; CCD 2018</i>
+                </td>
+            </tr>
+        </table></div>
+    </body>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#show_hide").click(function(){
+         // alert("click")
+         if($("#show_hide").text()=="show"){
+            $("#show_hide").html("hide")
+            $("#show_hide").show()
+            $(".table_menu").toggle()
+        }
+        else{$("#show_hide").html("show")
+            $("#show_hide").show()
+        $(".table_menu").toggle()
+
+    }
+})
+        })
+
+    </script>
+    </html>
